@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useQuery } from "@apollo/client";
 import { GET_WEATHER } from "../../query/query";
+import Dropdown from "../Dropdown/Dropdown";
 import Loader from "react-loader-spinner";
+import WeatherCardInfo from "./WeatherCardInfo";
 
 export default function WeatherCard() {
   const [city, setCity] = useState("osmaniye");
@@ -10,13 +12,14 @@ export default function WeatherCard() {
     variables: { name: city },
   });
   if (loading) {
-    return <Loader type="Puff" color="#00BFFF" height={100} width={100} />;
+    return <Loader type="TailSpin" color="#00BFFF" height={80} width={80} />;
   }
   return error === true ? (
     <div>Error...</div>
   ) : (
-    <div>
-      <div>{console.log(data)}</div>
+    <div className="wrapper">
+      <Dropdown city={city} setCity={setCity} />
+      <WeatherCardInfo weatherInfo={data} />
     </div>
   );
 }

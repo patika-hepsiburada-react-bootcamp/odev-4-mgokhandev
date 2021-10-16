@@ -1,4 +1,4 @@
-const allCities = [
+export const cities = [
   {
     name: "adana",
     plate: "01",
@@ -324,5 +324,3 @@ const allCities = [
     plate: "81",
   },
 ];
-
-export default allCities;
