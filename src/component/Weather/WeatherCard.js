@@ -17,8 +17,10 @@ export default function WeatherCard() {
   return error === true ? (
     <div>Error...</div>
   ) : (
-    <div className="wrapper">
-      <Dropdown city={city} setCity={setCity} />
+    <div className="weather-card">
+      <div className="Drop">
+        <Dropdown city={city} setCity={setCity} />
+      </div>
       <WeatherCardInfo weatherInfo={data} />
     </div>
   );

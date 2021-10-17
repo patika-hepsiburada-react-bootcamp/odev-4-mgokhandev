@@ -3,7 +3,7 @@ import { cities } from "../../cities/Cities.js";
 
 export default function Dropdown({ city, setCity }) {
   return (
-    <div>
+    <div className="dropdown">
       <select
         onChange={(e) => setCity(e.target.value)}
         name="cities"

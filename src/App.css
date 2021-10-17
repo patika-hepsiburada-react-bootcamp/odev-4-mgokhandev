@@ -1,3 +1,48 @@
 .App {
   text-align: center;
+  padding-top: 5%;
+  background-color: #00b4d8;
+  height: 100vh;
+}
+
+.Province h3 {
+  margin-top: 10px;
+  font-weight: bolder;
+  color: whitesmoke;
+}
+
+.Province p {
+  font-weight: bolder;
+  margin: 0px;
+  color: whitesmoke;
+}
+
+.weather-card {
+  margin-right: 33%;
+  margin-left: 33%;
+  width: 33%;
+  height: 75%;
+  min-height: 200px;
+  padding-top: 3%;
+  background: #1714d6;
+  border-radius: 10px;
+  box-shadow: 25px 25px 50px #1b1c1b, -25px -25px 50px #2d302f;
+}
+
+.dropdown select {
+  color: whitesmoke;
+  font-size: 2rem;
+  text-align: center;
+  background: #03045e;
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+}
+
+.Icon {
+  width: 33%;
+  height: 33%;
+  margin-right: 33%;
+  margin-left: 33%;
 }

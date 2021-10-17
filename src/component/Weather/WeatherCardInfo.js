@@ -1,3 +1,4 @@
+import Icon from "./Icon";
 import React from "react";
 
 export default function WeatherCardInfo({ weatherInfo }) {
@@ -8,7 +9,10 @@ export default function WeatherCardInfo({ weatherInfo }) {
   const getDate = (date) => new Date(date * 1000).toLocaleDateString("tr-TR");
 
   return (
-    <div>
+    <div className="Province">
+      <div>
+        <Icon title={getCityByName.weather.summary.title} />
+      </div>
       <div>
         <h3>{getCityByName.name}</h3>
       </div>
